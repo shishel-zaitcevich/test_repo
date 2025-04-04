@@ -1,0 +1,123 @@
+.sidebar {
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #e0e0e0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  .sidebarIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3b3b3b;
+    overflow: hidden;
+    height: 100vh;
+    width: 48px;
+    padding: 20px 6px;
+
+    .icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .activeIcon {
+        width: 36px;
+        height: 36px;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 8px;
+        border-radius: 8px;
+      }
+    }
+
+    .bottomIcons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 36px;
+
+      .divider {
+        box-sizing: border-box;
+        margin-top: -1px;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0.2);
+        border-width: 1px 0 0 0;
+        align-self: stretch;
+        flex-shrink: 0;
+        height: 0px;
+        position: relative;
+      }
+    }
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .title {
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+
+    h1 {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+      font-weight: 700;
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: 0.24px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .divider {
+      box-sizing: border-box;
+      margin-top: -1px;
+      border-style: solid;
+      border-color: var(--black-black-10, rgba(0, 0, 0, 0.1));
+      border-width: 1px 0 0 0;
+      align-self: stretch;
+      flex-shrink: 0;
+      height: 0px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .menu {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .footer {
+      text-align: center;
+
+      &__text {
+        font-size: 11px;
+        letter-spacing: 0.24px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.3);
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.container {
+  padding: 24px;
+  border-radius: 24px;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+
+  h3 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    font-weight: 700;
+  }
+
+  .addButton {
+    cursor: pointer;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.photos {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.photo {
+  position: relative;
+  max-width: 144px;
+  width: 100%;
+  max-height: 108px;
+  height: 100%;
+
+  img {
+    width: 100%;
+
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .deleteButton {
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+    padding: 6px;
+    top: 8px;
+    right: 8px;
+    background: #3b3b3b;
+    border: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,46 @@
+.menuItem {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    filter: brightness(0) saturate(100%) invert(40%) sepia(0%) saturate(0%) hue-rotate(0deg)
+      brightness(50%) contrast(100%);
+  }
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+.sidebarButton {
+  position: relative;
+  width: 210px !important;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+
+.inactiveIcon {
+  filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="colorize"><feColorMatrix type="matrix" values="0 0 0 0 0.231 0 0 0 0 0.231 0 0 0 0 0.231 0 0 0 1 0"/></filter></svg>#colorize');
+}
+
+.buttonName {
+  text-align: center;
+}
