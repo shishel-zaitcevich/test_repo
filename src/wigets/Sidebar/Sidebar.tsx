@@ -22,7 +22,7 @@ const Sidebar: React.FC = () => {
       <div className={styles.header}>
         <div className={styles.sidebarIcons}>
           <div className={styles.icons}>
-            <Image src={'/svg/logo.svg'} alt={'Edit'} width={36} height={36} />
+            <Image src={'/svg/Logo.svg'} alt={'Edit'} width={36} height={36} />
 
             {activeIcon && (
               <Image
